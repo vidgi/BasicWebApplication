@@ -1,7 +1,13 @@
+using BasicWebApplication.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+// builder.Services.AddTransient<HelloWorldService>();
+// builder.Services.AddScoped<HelloWorldService>();
+// builder.Services.AddSingleton<HelloWorldService>();
+
 
 var app = builder.Build();
 

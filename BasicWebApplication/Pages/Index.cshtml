@@ -1,10 +1,8 @@
 ﻿@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+@inject Model.HelloWorldService One
+@inject Model.HelloWorldService Two
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class = "display-4">@One.Now</h1>
+    <h1 class = "display-4">@Two.Now</h1>
 </div>
